@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #2b40ff, #07121a);
+  color: #fff;
+}
+/* Styling for the Card Container */
+.cardContainer {
+  background-color: white;  /* Solid background color */
+  padding: 10px; /* Adds space inside the card */
+  border-radius: 20px; /* Rounded corners for the card */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow for a floating effect */
+  max-width: 150px; /* Control the maximum width of the card */
+  height:180px;
+  width: 100%; /* Full width */
+  text-align: center; /* Center text inside the card */
+  margin-left: 20px; /* Align the cardContainer to the left side with a gap */
+  display: inline-block; /* Keeps the card as an inline-block to align it */
+}
+
+/* Clock Icon Styles */
+#clock-icon {
+    width: 100px; /* Size of the clock icon */
+    height: auto; /* Keep the aspect ratio */
+    margin-bottom: 10px; /* Space between the icon and the time display */
+}
+
+/* Digital Time Styles */
+.digitalTime {
+    font-size: 2rem; /* Set font size for the digital time */
+    color: red; /* White text color for contrast */
+    font-weight: bold; /* Make the time bold */
+    margin-top: 10px; /* Space between the clock icon and the time */
+}
+
+
+/* Main Weather Container */
+.mainContainer {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  padding: 1rem;
+  text-align: center;
+  margin: 20px auto; /* Centers the mainContainer */
+}
+
+/* Search Bar Styles */
+.searchInput {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.searchInput input {
+  width: 80%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.searchInput input:focus {
+  border: 1px solid #9c9dde;
+}
+
+.searchInput button {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  background: #9c9dde;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.searchInput button:hover {
+  background: #7a7dd8;
+}
+
+/* Weather Icon */
+.weatherIcon {
+  margin: 1rem 0;
+}
+
+.weatherIcon img {
+  max-width: 100%;
+  width: 8rem;
+}
+
+.weatherIcon h2 {
+  font-size: 2rem;
+  color: #323232;
+}
+
+/* City Details */
+.cityDetails {
+  margin: 1rem 0;
+}
+
+.cityDetails .cityName {
+  font-size: 2.5rem;
+  color: #323232;
+}
+
+.cityDetails .date {
+  font-size: 1.5rem;
+  color: #7a7a7a;
+}
+
+/* Wind and Humidity Details */
+.windDetails {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.windDetails .humidityBox,
+.windDetails .windSpeed {
+  display: flex;
+  align-items: center;
+}
+
+.windDetails img {
+  max-width: 3rem;
+  margin-right: 0.5rem;
+}
+
+.windDetails .humidity h2,
+.windDetails .windSpeed h2 {
+  font-size: 1.5rem;
+  color: #323232;
+}
+
+.windDetails .humidity span,
+.windDetails .windSpeed span {
+  font-size: 1rem;
+  color: #7a7a7a;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .mainContainer {
+    width: 90%;
+  }
+  .searchInput input {
+    width: 70%;
+  }
+}

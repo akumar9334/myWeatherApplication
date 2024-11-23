@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Main Container for Content -->
+  <div class="container">
+    
+    <!-- Weather Logo -->
+    <img src="images/weather-sky-atmosphere-rain.png" class="weather-logo" alt="Weather Logo">
+   
+    <!-- Heading and Subtitle -->
+    <div class="content-container">
+      <h1 class="heading">Welcome to the Weather Web App</h1>
+      
+      <!-- Container for logo and text to be on the same line -->
+      <div class="logo-text-container">
+    <img src="images/Animation - logo.gif" class="left-image" alt="Animation Logo" />
+    <div class="text-content">
+        <h3 id=zero>Made by @Ajaykumar</h3>
+        <h2 id="zen">Technologies Used:</h2>
+        <p id="zome">HTML, CSS, JS, Java, Servlet, JSP, OpenWeather API</p>
+    </div>
+    <img src="images/Animation - logo.gif" class="right-image" alt="Animation Logo" />
+</div>
+
+    </div>
+
+    <!-- Search Form -->
+    <form action="MyServlet" method="post" class="searchInputfirst">
+      <input type="text" placeholder="Enter City Name" id="searchInputfirst" name="city" required />
+      <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    
+  </div>
+</body>
+</html>

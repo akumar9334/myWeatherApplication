@@ -1,0 +1,194 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #2b40ff, #07121a);
+  color: white;
+  padding: 10px; /* Adds spacing around the container */
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
+/* Full-width Card Container */
+.container {
+  background: linear-gradient(
+    to right, 
+    #5265EF 0%,    /* Blue */
+    #080E3A 100%   /* Green */
+  );
+  padding: 15px; /* Increased padding for more spacing inside the container */
+  border-radius: 40px 50px 20px 10px; /* Different radius for each corner */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Slightly stronger shadow for contrast */
+  text-align: center;
+  width: 100%; /* Full width */
+  max-width: 800px; /* Maximum width of the card */
+  min-height: 350px; /* Minimum height to ensure the border radius is visible */
+  box-sizing: border-box; /* Ensure padding and borders are included in the container's width and height */
+  position: relative; /* To handle any absolute positioning of child elements */
+  overflow: hidden; /* Ensures border radius effect is not cut off */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Weather Logo */
+.weather-logo {
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(10px 10px 10px black);
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Add animation */
+  animation: logoAnimation 10s ease-in-out infinite;
+}
+
+/* Keyframes for Animation */
+@keyframes logoAnimation {
+  0% {
+    transform: scale(1) rotate(0deg); /* Starting at normal size */
+    opacity: 0.5; /* Starting with reduced opacity */
+  }
+  50% {
+    transform: scale(1.2) rotate(15deg); /* Scale up and rotate */
+    opacity: 1; /* Full opacity at the middle */
+  }
+  100% {
+    transform: scale(1) rotate(0deg); /* Return to normal size */
+    opacity: 0.5; /* Reduced opacity again */
+  }
+}
+
+/* Content Container for Heading and Image */
+.content-container {
+  text-align: center; /* Center text and image */
+  width: 100%; /* Full width */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center;
+  gap: 10px; /* Adds space between each element, adjust this as needed */
+}
+
+/* Heading Styling */
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 0; /* Removes margin at the bottom of the heading */
+  /* You can add padding or margin-top here if you want spacing above the heading */
+}
+
+/* Container for Logo and Text on the same line */
+.logo-text-container {
+  display: flex;             /* Use Flexbox to align elements in a row */
+  align-items: center;       /* Vertically align items in the center */
+  justify-content: flex-start; /* Align items to the start (left side) */
+  gap: 10px;                  /* Reduced space between logo and text */
+  text-align: left;          /* Ensure text is left-aligned */
+  margin-top: 0;             /* Removes margin on top of the logo-text container */
+  margin-left: 0;            /* Remove any left margin, if needed */
+}
+
+/* Styling for the Left Image (Logo) */
+.left-image {
+  width: 60px;  /* Set size for the logo */
+  height: auto;  /* Maintain aspect ratio */
+}
+.right-image {
+  width: 60px;              /* Set width for the right logo */
+  height: auto;              /* Maintain aspect ratio */
+}
+
+/* Styling for the Text Content */
+.text-content {
+  font-size: 1.2rem;  /* Font size for text */
+  margin: 0;           /* Remove any margin around the text */
+}
+
+/* Additional text styling */
+p {
+  margin: 0;           /* Remove extra margin */
+  font-size: 1.2rem;     /* Smaller font size to fit text */
+}
+
+h2 {
+  margin-left: 100px;
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin-left: 90px;
+  font-size: 1.2rem;
+}
+
+/* Search Form Styles */
+.searchInputfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.searchInputfirst input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.searchInputfirst input:focus {
+  border: 1px solid #9c9dde;
+}
+
+.searchInputfirst button {
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.searchInputfirst button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    min-height: 350px; /* Adjust minimum height on smaller screens */
+  }
+
+  .searchInputfirst input {
+    width: 70%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .weather-logo {
+    width: 200px; /* Smaller logo on smaller screens */
+  }
+
+  .left-image {
+    width: 120px; /* Smaller left image on smaller screens */
+  }
+
+  h3, h2, p {
+    font-size: 1.2rem; /* Adjust text size for small screens */
+  }
+}
