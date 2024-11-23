@@ -2,7 +2,7 @@
 ## Table of contents:
 # Introduction;
 A Weather Application that provides real-time weather data for any city.
-It uses a weather API to display key details like temperature, humidity, wind speed, and weather conditions with an intuitive user interfa
+It uses a weather API to display key details like temperature, humidity, wind speed, and weather conditions with an intuitive user interface
 # Features;
 Real-time weather data for any city
 Displays temperature, humidity, wind speed, and weather conditions
